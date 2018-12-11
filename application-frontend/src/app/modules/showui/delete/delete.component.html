@@ -1,0 +1,33 @@
+<div style="margin:auto;max-width:500px;">
+<form class="form1" [formGroup]="showDetails" fxLayout fxLayout="column" fxLayoutGap="10px">
+
+    <div class="selectCity">
+        <mat-form-field>
+            <mat-select   formControlName="city" [(ngModel)]="selectedLocation" placeholder="Location" required>
+            <mat-option *ngFor="let location of locations" [value]="location.value" (click)="getMovies(selectedLocation)"> {{location.value}} </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="selectMovie">
+        <mat-form-field>
+            <mat-select   formControlName="movie" [(ngModel)]="selectedMovie" placeholder="Select movie" required>
+                <mat-option *ngFor="let movie of movies" [value]="movie" (click)="getTheatres(selectedLocation)"> {{movie.movieTitle}} </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="selectTheatre">
+        <mat-form-field>
+            <mat-select   formControlName="theatre" [(ngModel)]="selectedTheatre" placeholder="Select Theatre" required >
+                <mat-option *ngFor="let theatre of theatres" [value]="theatre"> {{theatre.theatreName}} </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="button1">
+        <button mat-button style="background: #000;color: #dbd9d9;margin-right:10px;" 
+        (click)="setShowJson(selectedLocation,selectedMovie,selectedTheatre)">Delete</button>
+    </div>
+    
+</form>
+</div>
+
+

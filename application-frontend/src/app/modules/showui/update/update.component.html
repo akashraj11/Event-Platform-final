@@ -1,0 +1,150 @@
+<div style="margin:auto;max-width: 600px;">
+        <form class="form1" [formGroup]="showDetails" fxLayout fxLayout="column">
+    
+            <div class="selectCity">
+                <mat-form-field>
+                    <mat-select   formControlName="city" [(ngModel)]="selectedLocation" placeholder="Location" required>
+                    <mat-option *ngFor="let location of locations" [value]="location.value" (click)="getMovies(selectedLocation)"> {{location.value}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="selectMovie">
+                <mat-form-field>
+                    <mat-select   formControlName="movie" [(ngModel)]="selectedMovie" placeholder="Select movie" required>
+                        <mat-option *ngFor="let movie of movies" [value]="movie" (click)="getTheatres(selectedLocation)"> {{movie.movieTitle}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="selectTheatre">
+                <mat-form-field>
+                    <mat-select   formControlName="theatre" [(ngModel)]="selectedTheatre" placeholder="Select Theatre" required >
+                        <mat-option *ngFor="let theatre of theatres" [value]="theatre" (click)="setTheatre(theatre)"> {{theatre.theatreName}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-select   formControlName="category11" [(ngModel)]="selectedcategory1" placeholder="category" required>
+                        <mat-option *ngFor="let category1 of categories1" [value]="category1.type"> {{category1.type}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="inputPrice1" style="margin-left:20px;">
+                    <input formControlName="price1" type="number" [(ngModel)]="enteredPrice1" matInput 
+                    placeholder="Ticket Price" required (blur)="setCategory(selectedcategory1,enteredPrice1)">
+                </mat-form-field><br>
+            </div>
+            <div *ngIf="size == 2">
+    
+                <mat-form-field>
+                    <mat-select   formControlName="category22" [(ngModel)]="selectedcategory2" placeholder="category" required>
+                        <mat-option *ngFor="let category2 of categories1" [value]="category2.type"> {{category2.type}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="inputPrice2" style="margin-left:20px;">
+                    <input formControlName="price2" type="number" [(ngModel)]="enteredPrice2" matInput 
+                    placeholder="Ticket Price" required (blur)="setCategory(selectedcategory2,enteredPrice2)">
+                </mat-form-field><br>
+            </div>
+            <div *ngIf="size == 3">
+            
+                <mat-form-field>
+                    <mat-select   formControlName="category22" [(ngModel)]="selectedcategory2" placeholder="category" required>
+                        <mat-option *ngFor="let category2 of categories1" [value]="category2.type"> {{category2.type}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="inputPrice2" style="margin-left:20px;">
+                    <input formControlName="price2" type="number" [(ngModel)]="enteredPrice2" matInput 
+                    placeholder="Ticket Price" required (blur)="setCategory(selectedcategory2,enteredPrice2)">
+                </mat-form-field><br>
+    
+                <mat-form-field>
+                    <mat-select   formControlName="category33" [(ngModel)]="selectedcategory3" placeholder="category" required>
+                        <mat-option *ngFor="let category3 of categories1" [value]="category3.type"> {{category3.type}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="inputPrice3" style="margin-left:20px;">
+                    <input formControlName="price3" type="number" [(ngModel)]="enteredPrice3" matInput 
+                    placeholder="Ticket Price" required (blur)="setCategory(selectedcategory3,enteredPrice3)">
+                </mat-form-field><br>
+            </div>
+            <div>
+                <mat-form-field>
+                    <input matInput [matDatepicker]="picker" formControlName="date" placeholder="pick a date" [(ngModel)]="selectedDate" required>
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field>
+                    <mat-select   formControlName="count" [(ngModel)]="selectedCount" placeholder="Shows Count per day" required>
+                        <mat-option *ngFor="let number of numbers" [value]="number"> {{number}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div *ngIf="selectedCount == 1">
+                <mat-form-field>
+                    <input formControlName="date2" type="time" [(ngModel)]="enteredDate1" matInput 
+                    placeholder="Slot1 time (24Hr Format)" required (blur)="addTiming(enteredDate1,selectedDate)">
+                </mat-form-field>
+                <mat-icon> watch</mat-icon>
+            </div>
+            <div *ngIf="selectedCount == 2">
+    
+                <mat-form-field >
+                        <input formControlName="date2" type="time" [(ngModel)]="enteredDate1" matInput 
+                            placeholder="slot1 time (24Hr Format)" required (blur)="addTiming(enteredDate1,selectedDate)" >
+                </mat-form-field>
+                <mat-icon style="margin-right:30px;"> watch</mat-icon>
+                <mat-form-field>
+                    <input formControlName="date2" type="time" [(ngModel)]="enteredDate2" matInput 
+                    placeholder="slot2 time (24Hr Format)" required  (blur)="addTiming(enteredDate2,selectedDate)">
+                </mat-form-field>
+                <mat-icon> watch</mat-icon>
+            </div>
+            <div *ngIf="selectedCount == 3">
+    
+                <mat-form-field>
+                    <input formControlName="date2" type="time" [(ngModel)]="enteredDate1" matInput 
+                                placeholder="slot1 time (24Hr Format)" required  (blur)="addTiming(enteredDate1,selectedDate)">
+                </mat-form-field>
+                <mat-icon style="margin-right:30px;"> watch</mat-icon>
+                <mat-form-field>
+                    <input formControlName="date2" type="time" [(ngModel)]="enteredDate2" matInput 
+                    placeholder="slot2 time (24Hr Format)" required (blur)="addTiming(enteredDate2,selectedDate)">
+                </mat-form-field>
+                <mat-icon style="margin-right:30px;"> watch</mat-icon>
+                <mat-form-field >
+                    <input formControlName="date3" type="time" [(ngModel)]="enteredDate3" matInput 
+                    placeholder="slot3 time" required (blur)="addTiming(enteredDate3,selectedDate)">
+                </mat-form-field>
+                <mat-icon> watch</mat-icon>
+            </div>
+            <div *ngIf="selectedCount == 4">
+                <mat-form-field>
+                    <input formControlName="date2" type="time" [(ngModel)]="enteredDate1" matInput 
+                            placeholder="slot1 time (24Hr Format)" required (blur)="addTiming(enteredDate1,selectedDate)">
+                </mat-form-field>
+                <mat-icon style="margin-right:30px;"> watch</mat-icon>
+                <mat-form-field >
+                    <input formControlName="date2" type="time" [(ngModel)]="enteredDate2" matInput 
+                    placeholder="slot2 time (24Hr Format)" required (blur)="addTiming(enteredDate2,selectedDate)">
+                </mat-form-field>
+                <mat-icon style="margin-right:30px;"> watch</mat-icon>
+                <mat-form-field>
+                    <input formControlName="date3" type="time" [(ngModel)]="enteredDate3" matInput 
+                    placeholder="slot3 time (24Hr Format)" required (blur)="addTiming(enteredDate3,selectedDate)">
+                </mat-form-field>
+                <mat-icon style="margin-right:30px;"> watch</mat-icon>
+                <mat-form-field>
+                    <input formControlName="date4" type="time" [(ngModel)]="enteredDate4" matInput 
+                    placeholder="slot4 time (24Hr Format)" required (blur)="addTiming(enteredDate4,selectedDate)">
+                </mat-form-field>
+                <mat-icon> watch</mat-icon>
+            </div>
+            <div>
+                <button mat-button style="background: #000;color: #dbd9d9" (click)="setShowJsonUpdate(selectedLocation,selectedMovie,selectedTheatre)">Update Show</button>
+            </div>
+        </form>
+    </div>
+
+

@@ -1,0 +1,132 @@
+<h3>Enter Movie Details</h3>
+
+<form (ngSubmit)="onSubmit()" #movieForm="ngForm" id="movieForm">
+
+  
+
+
+  <div id="primary">
+
+      <mat-form-field>
+      <input  matInput placeholder="Movie Title"  [(ngModel)]="movie.movieTitle" type="text" 
+      class="form-control" id="title" name="title" required #title="ngModel">
+      </mat-form-field>
+      <div [hidden]="title.valid || title.pristine" class="alert">Name not valid </div>
+
+      <mat-form-field>
+          <input matInput placeholder="Director" [(ngModel)]="movie.director" type="text" 
+          class="form-control" id="director" name="director" required #director="ngModel">
+      </mat-form-field>
+        <div [hidden]="director.valid ||director.pristine" class="alert">Director not valid</div>
+
+      <mat-form-field>
+        <input matInput placeholder="Year of Release" [(ngModel)]="movie.yearOfRelease" type="text" 
+        class="form-control" id="year" name="year" required #year="ngModel">
+      </mat-form-field>
+      <div [hidden]="year.valid || year.pristine" class="alert">Year not valid</div>
+
+      <mat-form-field>
+        <input matInput placeholder="Poster URL" [(ngModel)]="movie.posterUrl" type="text"
+        class="form-control" id="poster" name="poster" required #poster="ngModel">
+      </mat-form-field>
+      <div [hidden]="poster.valid || poster.pristine" class="alert alert-danger">URL not valid </div>
+
+      <mat-form-field>
+        <mat-select placeholder="Language" [(ngModel)]="movie.language" type="text" class="form-control" id="language" name="language" required #language="ngModel">
+          <mat-option *ngFor="let  language of languages" [value]="language">{{language}}</mat-option>
+      </mat-select>
+      </mat-form-field>
+      <div [hidden]="language.valid || language.pristine"
+      class="alert alert-danger">Language not valid
+      </div>
+      <div id="castBox">
+      <mat-form-field >
+      <input placeholder="Cast" matInput [(ngModel)]="cast" type="text"
+      class="form-control" id="cast" name="cast" #post="ngModel">
+      </mat-form-field>
+      <button  mat-raised-button id="addButton" type="button" (click)="addCast()">Add</button>
+      </div>
+      <ul id="castArray">
+        <li *ngFor="let cast of castArray">{{cast+", "}}</li>
+      </ul>
+      
+</div>
+
+<div id="secondary">
+ <h5>Certificate</h5>
+  <div id="certificateBox">
+
+    
+          <input [(ngModel)]="movie.certificate" type="radio" class="form-check-input" id="certificateU" name="certificate"  #certificate="ngModel" value="U">
+          <label class="form-check-label" for="certificateU">
+            U
+          </label>
+          <input [(ngModel)]="movie.certificate" type="radio" class="form-check-input" id="certificateA" name="certificate"  #certificate="ngModel" value="A">
+          <label class="form-check-label" for="certificateA">
+            A
+          </label>
+          <input [(ngModel)]="movie.certificate" type="radio" class="form-check-input" id="certificateUA" name="certificate"  #certificate="ngModel" value="U/A">
+          <label class="form-check-label" for="certificateUA">
+            U/A
+          </label>
+          <input [(ngModel)]="movie.certificate" type="radio" class="form-check-input" id="certificateS" name="certificate"  #certificate="ngModel" value="S">
+          <label class="form-check-label" for="certificateS">
+            S
+          </label>
+
+  </div>
+  <mat-accordion>
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Genre
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <div id="genreBox">
+      
+              <div class="form-check" class="genre">
+                <input [(ngModel)]="genreMap.action" type="checkbox" class="form-check-input" id="action" name="action"  #action="ngModel">Action
+              </div>
+              <div class="form-check" class="genre">
+                <input [(ngModel)]="genreMap.comedy" type="checkbox" class="form-check-input" id="comedy" name="comedy"  #comedy="ngModel">Comedy
+              </div>
+              <div class="form-check" class="genre">
+                <input [(ngModel)]="genreMap.fantasy" type="checkbox" class="form-check-input" id="fantasy" name="fantasy"  #fantasy="ngModel">Fantasy
+              </div>
+              <div class="form-check" class="genre">
+                <input [(ngModel)]="genreMap.scifi" type="checkbox" class="form-check-input" id="scifi" name="scifi"  #scifi="ngModel">SCI-FI
+              </div>
+              <div class="form-check" class="genre">
+                <input [(ngModel)]="genreMap.drama" type="checkbox" class="form-check-input" id="drama" name="drama"  #drama="ngModel">Drama
+              </div>
+              <div class="form-check" class="genre">
+                <input [(ngModel)]="genreMap.romance" type="checkbox" class="form-check-input" id="romance" name="romance"  #romance="ngModel">Romance
+              </div>
+              <div class="form-check" class="genre">
+                  <input [(ngModel)]="genreMap.adventure" type="checkbox" class="form-check-input" id="adventure" name="adventure"  #adventure="ngModel">Adventure
+              </div>
+              <div class="form-check" class="genre">
+                  <input [(ngModel)]="genreMap.animation" type="checkbox" class="form-check-input" id="animation" name="animation"  #animation="ngModel">Animation
+              </div>
+              <div class="form-check" class="genre">
+                  <input [(ngModel)]="genreMap.crime" type="checkbox" class="form-check-input" id="crime" name="crime"  #crime="ngModel">Crime
+              </div>
+              <div class="form-check" class="genre">
+                  <input [(ngModel)]="genreMap.mystery" type="checkbox" class="form-check-input" id="mystery" name="mystery"  #mystery="ngModel">Mystery
+              </div>
+              <div class="form-check" class="genre">
+                  <input [(ngModel)]="genreMap.thriller" type="checkbox" class="form-check-input" id="thriller" name="thriller"  #thriller="ngModel">Thriller
+              </div>
+              <div class="form-check" class="genre">
+                  <input [(ngModel)]="genreMap.fiction" type="checkbox" class="form-check-input" id="fiction" name="fiction"  #fiction="ngModel">Fiction
+              </div>
+          </div>
+      </mat-expansion-panel>
+      </mat-accordion>
+</div>
+<div id="submitWrapper">
+<button mat-raised-button type="submit" id="sub" class="btn btn-success" [disabled]="!movieForm.form.valid">Submit</button>
+</div>
+
+
+</form>

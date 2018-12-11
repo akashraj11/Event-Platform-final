@@ -1,0 +1,46 @@
+
+<div class="body">
+    <div class="veen">
+        <div class="login-btn splits">
+            <button class="active">Login</button>
+        </div>
+        <div class="rgstr-btn splits">
+				<p>Don't have an account?</p>
+                <a class="terms"  [routerLink]="['/userregistration']" routerLinkActive="router-link-active"><button>Register</button></a>
+        </div>
+        <div class="wrapper">
+            <form id="login" (submit)="loginUser($event)" tabindex="500">
+                <h3>Login</h3>
+                <div class="mail">
+                    <input class="textbox" type="email" required>
+                    <label>E-Mail</label>
+                </div>
+                <div class="passwd">
+                    <input class="textbox" type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="submit">
+                    <button class="dark">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>	
+</div>
+
+
+<style type="text/css">
+    .site-link{
+  padding: 5px 15px;
+        position: fixed;
+        z-index: 99999;
+        background: #fff;
+        box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+        right: 30px;
+        bottom: 30px;
+        border-radius: 10px;
+    }
+    .site-link img{
+        width: 30px;
+        height: 30px;
+    }
+</style>

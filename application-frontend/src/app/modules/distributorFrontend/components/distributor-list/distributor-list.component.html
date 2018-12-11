@@ -1,0 +1,6 @@
+ 
+<ul>
+  <li *ngFor="let distributor of distributors">
+    <a (click)="getDistributor(distributor.email)" routerLinkActive="active"><button>{{distributor.email}}</button></a>
+  </li>
+</ul>

@@ -1,0 +1,28 @@
+
+<body>
+  <div id="container">
+  <div id="imageContainer" class="childContainer">
+    <img src={{movie.posterUrl}}>
+  </div>
+  <div id="detailsContainer" class="childContainer">
+    <h1>{{movie.movieTitle}}</h1>
+    <h3>{{movie.yearOfRelease}}</h3>
+    <ul id="genre">
+        <li *ngFor="let genre of movie.genre">
+          {{genre+" "}}
+        </li>
+      </ul>
+    <h4>{{"Director :"+movie.director}}</h4>
+    <h4>{{"Certificate :"+movie.certificate}}</h4>
+    <h4>{{"Language :"+movie.language}}</h4>
+    <h4>{{"Cast :"}}</h4>
+    <ul id="cast">
+      <li *ngFor="let cast of movie.cast">
+        {{cast}}
+      </li>
+    </ul>
+    
+
+  </div>
+  </div>
+  </body>

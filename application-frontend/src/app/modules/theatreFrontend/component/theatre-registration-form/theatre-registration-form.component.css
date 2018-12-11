@@ -1,0 +1,45 @@
+.signup {
+    max-width: 90%px;
+    margin:auto 100px ;
+}    
+form {
+      display: flex;
+      flex-direction: column;
+    }
+
+.textPos{
+    text-align: center;
+}
+
+.classseat{
+    margin: auto;
+}
+
+.goldcl{
+    border: 1px solid black;
+}
+
+.silvercl{
+    border: 1px solid black;
+}
+
+.action{
+    display: flex;
+    flex-direction: column;
+}
+
+.matborder{
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 425px) {
+    .signup {
+        max-width: 90%px;
+        margin:0;
+    }    
+
+    .matborder{
+        width: 100%;
+    }
+
+}

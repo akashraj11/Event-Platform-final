@@ -1,0 +1,154 @@
+#container{
+    
+    margin: auto;
+    max-width: 1000px;
+}
+
+.form{
+text-align: center;
+padding-top: 10px;
+}
+
+.response-group {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  
+  .response-buttons {
+    margin: 5px;
+  }
+  
+  .selected-value {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .button {
+      background: #676767;
+      color: white;
+      margin: auto;
+  }
+
+  .button-container{
+      width: 100%;
+      display: flex;
+  }
+  mat-card-actions  {
+      margin: auto;
+  }
+ 
+  .invite {
+      text-align: center;
+  }
+
+
+ 
+
+
+.response-form
+{
+   
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color:whitesmoke;
+    max-width: 1000px;
+}
+.childContainer
+{
+    padding: 2%;
+    flex-basis: 45%;
+}
+button{
+    background-color: rgb(124, 124, 124);
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h3{
+    padding: 0;
+    margin:5px;
+}
+h4{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.emails>li{
+    display: inline;
+}
+
+@media screen and (max-width: 400px) {
+    .childContainer
+{
+    flex-basis: 98%;
+}
+#imageContainer
+{
+    height: 30em;
+}
+#detailsContainer
+{
+    text-align: center;
+}
+#container
+{
+    min-height: 30em;
+}
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    .childContainer
+    {
+        flex-basis: 98%;
+    }
+    #imageContainer
+    {
+        height: 32em;
+    }
+    #detailsContainer
+    {
+        text-align: center;
+    }
+    #container
+{
+    min-height: 32em;
+}
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    #imageContainer
+    {
+        height: 35em;
+    }
+    #container
+{
+    min-height: 35em;
+}
+    
+}
+
+@media screen and (min-width: 1281px)  {
+    #imageContainer
+    {
+        height: 35em;
+    }
+    #container
+{
+    min-height: 35em;
+}
+}

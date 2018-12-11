@@ -1,0 +1,14 @@
+<div id="topContainer">
+  <div class="childContainer" id="h1Container">
+<h1>{{cityName}}</h1></div>
+<div class="childContainer" id="buttonContainer">
+<button mat-raised-button (click)="addMovie()">Add New Movie</button></div>
+</div>
+<div id="container">
+<ul>
+  <li *ngFor="let movie of movies">
+    <movie-card [movie]=movie [email]="email" [cityName]="cityName"></movie-card>
+  </li>
+</ul>
+
+</div>

@@ -1,0 +1,13 @@
+
+<div class ="container">
+<app-header (childEvent)="filter($event)"></app-header>
+<h3 *ngIf="cityName != 'default City'">Movies Running in {{cityName}}</h3>
+<ul class="movie-container" *ngIf="cityName != 'default City'">
+  <li *ngFor="let movie of movies">
+    <movie-card [movie]=movie ></movie-card>
+  </li>
+</ul>
+<div id="notfound-image">
+    <img  id="centered-image"  *ngIf="cityName == 'default City'" src="/src/assets/images/not-found.png" alt="Database empty please add theatre" >
+</div>
+</div>

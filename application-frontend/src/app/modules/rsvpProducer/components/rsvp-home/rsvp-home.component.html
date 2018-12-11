@@ -1,0 +1,20 @@
+<div id="bg">
+<div id="container">
+<div class="childContainer" >
+<mat-form-field>
+  <mat-select placeholder="Select Event">
+    <mat-option *ngFor="let event of events" (click)="getDetails(event.id)" >
+      {{event.eventName}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+<div class="childContainer" id="buttonContainer">
+<button mat-raised-button (click)="addRsvp()">Add New RSVP</button>
+</div>
+</div>
+
+<div id="routerContainer">
+<router-outlet></router-outlet>
+</div>
+</div>

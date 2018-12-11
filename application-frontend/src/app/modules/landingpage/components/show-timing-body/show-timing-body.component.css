@@ -1,0 +1,29 @@
+.movie {
+    text-align: center;
+    font-size: 1.7em;
+    text-shadow: 2px 2px #d8d8d8;
+    background:snow;
+}
+
+body{
+    background: snow;
+}
+
+
+h3 {
+    color: #444;
+    font: 800 150%/1.4 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h3::selection {
+    -webkit-text-stroke: 4px #fb8a05;
+    color: transparent;
+  }
+   
+  .minH{
+      min-height:55vh;
+  }

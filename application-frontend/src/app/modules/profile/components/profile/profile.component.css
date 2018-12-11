@@ -1,0 +1,55 @@
+.example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  mat-tab-group{
+    margin: auto;
+    max-width: 500px;
+  }
+
+  body{
+    background-color: rgb(239, 241, 241);
+  }
+
+
+  @media screen and (max-width: 400px) {
+    .example-card{ 
+      flex-direction: column;
+    }
+  }
+  
+
+  .notfound-image {
+    width: 100%;
+  }
+  #centered-image {
+    margin-left:25%;
+    margin-right:auto;
+    float :none;
+    height: 500px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .notfound-image {
+        width: 100%;
+      }
+      #centered-image {
+        height: 300px;
+        margin-left: 0; 
+        margin-left: 0;
+        width: 100vw;
+      }
+  }

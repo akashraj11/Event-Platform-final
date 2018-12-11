@@ -1,0 +1,38 @@
+
+<body>
+
+<div id="notfound-image">
+
+</div> 
+<div class="modal-dialog modal-md">
+ <div class="modal-content" uib-modal-transclude="">
+  <div class="ng-scope">
+   <div class="modal-header">
+    <h3 class="modal-title text-center text-uppercase">
+     <span ng-bind="headingText" class="ng-binding">Select a region</span>
+    </h3></div><div class="modal-body p-t-40 p-b-20" style="max-height: 370px;">
+     <div class="row"><div class="col-xs-10 col-xs-offset-1">
+      <form name="userLocationForm" form-error-scroll=""  class="ng-pristine ng-valid">
+        <img class="citysky" src="/assets/images/footer-skyline.png">
+       <div class="form-group ng-scope" >
+        <div class="row"  >
+           <div class="col-sm-4 col-sm-offset-1" *ngFor="let show of shows; let i = index;" id ="select-city" >
+             <ul class="list-unstyled" >
+                <li class="p-t-5" >
+                  <a class="text-primary" (click)="loadMovies(shows[i].cityName)">{{shows[i].cityName}}</a>
+                </li>
+             </ul>
+           </div>
+        </div>
+       </div>
+      </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>  
+
+
+
+</body>

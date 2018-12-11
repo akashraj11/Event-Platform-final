@@ -1,0 +1,377 @@
+body{
+  background-color: whitesmoke;
+  color: black;
+}
+.container {
+  background: whitesmoke;
+  width: 100%;
+}
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+  }
+  
+.rating-big{
+  color: black;
+}
+.rating-small{
+  color: black;
+}
+
+img{
+  width: 100%;
+}
+  
+  .item {
+    display: inline-block;
+    padding:  .25rem;
+    width:  100%;
+    position: relative;
+  }
+  .img-thumbnail{
+    width: 100%;
+  }
+  
+  .well {
+    position:relative;
+    display: block;
+  }
+  
+  #navigation {
+    background-color: #222126;
+  }
+  
+  #navigation a{
+    font-size: 1.2em;
+    color: #65BFA6;
+  
+    text-transform: uppercase;
+  }
+  
+  #navigation li {
+    cursor: pointer;
+  }
+  
+  #navigation li:hover{
+    background-color: #65BFA6;
+    color: white;
+  }
+  
+  #navigation a:hover{
+    color: #2C2833;
+  }
+  
+  .navbar-toggle {
+    background-color: #65BFA6;
+  }
+  
+  #logo {
+    color: white;
+  }
+  
+  header {
+    margin-bottom: 60px;
+    color: #8d8b95;
+  }
+  
+  #search-group {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  #search-field {
+    background-color: #525059;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding:  5px 5px 5px 20px;
+  
+  }
+  
+  #search-btn {
+    background-color: rgb(243, 46, 16);
+    color: white;
+    cursor: pointer;
+    font-size: 1.3em;
+    border: none;
+  }
+  
+  .img-preview {
+    box-shadow: 0 4px 8px 0 black;
+  }
+  
+  .btn-clear {
+    height: 30px;
+    background-color: #2C2833;
+    border: 1px solid #65BFA6;
+    color: #65BFA6;
+    float: right;
+    z-index: 8;
+    transition: color 0.5s;
+  }
+  
+  .btn-clear:hover {
+    color: white;
+    background-color: #65BFA6;
+  }
+  
+  .close-icon
+  {
+    display:block;
+    box-sizing:border-box;
+    width:40px;
+    height:40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 8;
+    border: none;
+    border-radius:100%;
+    background-color: rgb(255, 48, 16);
+    box-shadow:0px 0px 5px 2px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .close-icon:after{
+    display: inline-block;
+    content: "\00d7";  
+    font-size: 200%;
+  }
+  
+  .close-icon:hover {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .badge-rating {
+    display:block;
+    font-size: 24px;
+    text-align: center;
+    width:50px;
+    height:50px;
+    padding: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 8;
+    border: none;
+    border-radius:100%;
+    background-color: rgb(255, 34, 0);
+    box-shadow:0px 0px 5px 2px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .icon-label {
+    color: rgb(223, 30, 0);
+  }
+  
+  .thumbnail {
+    background-color: #2C2833;
+    min-height: 300px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    -webkit-transition: background-color 0.5s;  
+    transition: background-color 0.5s;
+  }
+  
+   
+  
+  .thumbnail h3 {
+    color: white;
+    margin: 0px;
+  }
+  
+  .thumbnail p {
+    color: rgb(241, 32, 0);
+  }
+  
+  .img-container {
+    position: relative;
+    width: 300px;
+    min-height: 300px;
+    margin: auto;
+  }
+  
+  .img-container .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn-favorite {
+    background-color: #65BFA6;
+    font-size: 230%;
+    cursor: pointer;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+  }
+  
+  .btn-not-favorite {
+    background-color: #525059;
+    color:  lightgrey;
+    font-size: 230%;
+ 
+    cursor: pointer;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    -webkit-transition: background-color 0.4s, color 0.4s;
+    -moz-transition: background-color 0.4s, color 0.4s;
+    -ms-transition: background-color 0.4s, color 0.4s;
+    -o-transition: background-color 0.4s, color 0.4s;
+    transition: background-color 0.4s, color 0.4s;
+  }
+  
+  .btn-not-favorite:hover {
+    background-color: #65BFA6;
+    color: white;
+  }
+  
+  .label-rating {
+    background-color: #65BFA6;
+    font-size: 200%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .rating {
+    margin-top: 20px;
+    width: 120px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+    display: block;
+    text-align: center;
+  }
+  
+  .rating-big {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .rating-small {
+    font-size: 16px;
+  }
+  
+  .div-favorite {
+    width: 100%;
+    height: 30px;
+    background-color: #2C2833;
+    border: 2px solid #65BFA6;
+    color: #65BFA6;
+    transition: color 0.5s;
+  }
+  
+  .div-favorite:hover {
+    color: white;
+    background-color: #65BFA6;
+  }
+  
+  .img-big {
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 black;
+  }
+  
+  .caption {
+    background-color: #222126;
+    box-shadow: 0 4px 8px 0 black;
+  }
+  
+  .text-small {
+    font-size:1.2em;
+  }
+  
+  .title-genre {
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .title-details {
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .label-details {
+    color: #8d8b95;
+    font-weight: bold;
+  }
+  
+  .text-story {
+    text-align: justify;
+    margin: 1em auto;
+    color: #8d8b95;
+  }
+  
+  .div-story {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .div-details {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .div-details > p {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  @media screen and (max-width: 568px) {
+    body {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    .col-xs-12 {
+       width: 100%; 
+
+  }
+  }
+  
+  img{
+    max-height: 500px;
+  }
+
+  /*! CSS Used from: https://in.bmscdn.com/static/css/movie-synopsis-v1-e13fe708a4.css */
+*{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;outline:0;}
+a:active,a:focus,a:hover{outline:0;}
+*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit;}
+a{margin:0;padding:0;font-size:100%;text-decoration:none;vertical-align:baseline;background:0 0;}
+*{-webkit-tap-highlight-color:transparent;}
+.btn{text-align:center;cursor:pointer;padding:15px 40px;font-size:12px;border-radius:2px;outline:0;border:none;text-decoration:none;text-transform:uppercase;letter-spacing:2px;display:inline-block;}
+.btn._cuatro{background:#0078ff;color:#fff;}
+@media (min-width:992px) and (max-width:1279px),(min-width:1280px) and (max-width:1439px),(min-width:1440px){
+.btn._cuatro:focus,.btn._cuatro:hover{background:#0060cc;}
+}
+@media (min-width:320px) and (max-width:767px){
+.btn._cuatro{-webkit-tap-highlight-color:transparent;}
+}
+/*! CSS Used from: https://in.bmscdn.com/static/css/movie-synopsis-v1-b-71e178be28.css */
+*{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;outline:0;}
+a:active,a:focus,a:hover{outline:0;}
+*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit;}
+a{margin:0;padding:0;font-size:100%;text-decoration:none;vertical-align:baseline;background:0 0;}
+*{-webkit-tap-highlight-color:transparent;}
+.btn{text-align:center;cursor:pointer;padding:15px 40px;font-size:12px;border-radius:2px;outline:0;border:none;text-decoration:none;text-transform:uppercase;letter-spacing:2px;display:inline-block;}
+.btn._cuatro{background:#000000;color:#fff;}
+@media (min-width:992px) and (max-width:1279px),(min-width:1280px) and (max-width:1439px),(min-width:1440px){
+.btn._cuatro:focus,.btn._cuatro:hover{background:#7a7a7a;}
+}
+@media (min-width:320px) and (max-width:767px){
+.btn._cuatro{-webkit-tap-highlight-color:transparent;}
+}
+.sidebar .right-content .action-book a{max-width:238px;margin:0 auto;min-width:238px;}

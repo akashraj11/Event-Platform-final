@@ -1,0 +1,182 @@
+
+#hero-image
+{
+    z-index: -1000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/images/hero.jpg);
+    #mask
+    {
+        height: 60vh;
+        width: 100%;
+        background-color:rgba(20,30,40,0.9);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        #hero-content
+        {
+            margin:auto;
+            flex-basis: 40%;
+            background-color:rgba(0,0,0,0.5);
+            color: rgb(192, 189, 189);
+            border-radius: 15px;
+           h1 
+           {
+            margin-top: 0;
+            font-family: 'Unlock', cursive;
+            padding-bottom: 30px;
+            font-size: 4em;
+            letter-spacing: 1px;
+           }
+           h3 
+           {
+               font-family: 'Unlock', cursive;
+               font-size: 2em;
+               padding-top: 30px;
+               margin-bottom: 0;
+           }
+           
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    
+    #hero-image
+    {
+        #mask
+        {
+            height: 36vh;
+            #hero-content
+            {
+              
+                flex-basis: 70%;
+                background-color:rgba(0,0,0,0.5);
+                border-radius: 15px;     
+               h1 
+               {
+                margin-top: 0;
+                padding-bottom: 10px;
+                font-size: 2em;
+               }
+               h3 
+               {
+                   font-size: 1em;
+                   padding-top: 10px;
+                   margin-bottom: 0;
+               }
+               
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    
+    #hero-image
+    {
+        #mask
+        {
+            height: 40vh;
+            #hero-content
+            {
+              
+                flex-basis: 65%;
+                background-color:rgba(0,0,0,0.5);
+                border-radius: 15px;     
+               h1 
+               {
+                margin-top: 0;
+                padding-bottom: 12px;
+                font-size: 2.4em;
+               }
+               h3 
+               {
+                   font-size: 1.2em;
+                   padding-top: 12px;
+                   margin-bottom: 0;
+               }
+               
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    
+    #hero-image
+    {
+        #mask
+        {
+            height: 50vh;
+            #hero-content
+            {
+              
+                flex-basis: 60%;
+                background-color:rgba(0,0,0,0.5);
+                border-radius: 15px;     
+               h1 
+               {
+                margin-top: 0;
+                padding-bottom: 20px;
+                font-size: 3em;
+               }
+               h3 
+               {
+                   font-size: 1.5em;
+                   padding-top: 20px;
+                   margin-bottom: 0;
+               }
+               
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    
+    #hero-image
+    {
+        #mask
+        {
+            height: 60vh;
+            #hero-content
+            {
+              
+                flex-basis: 40%;
+                background-color:rgba(0,0,0,0.5);
+                border-radius: 15px;     
+               h1 
+               {
+                margin-top: 0;
+                padding-bottom: 30px;
+                font-size: 4em;
+               }
+               h3 
+               {
+                   font-size: 2em;
+                   padding-top: 30px;
+                   margin-bottom: 0;
+               }
+               
+            }
+        }
+    }
+}
+
+
+#demoFont {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    }
+

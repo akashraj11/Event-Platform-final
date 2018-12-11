@@ -1,0 +1,10 @@
+<body>
+<div class="movie ">
+    <mat-card><h3>{{movieTitle}}</h3></mat-card>
+    
+</div>
+<div  class="minH">
+<div *ngFor="let theatre of theatres" id ="showsection">
+    <mat-card> <app-theatre [showData]="theatre"></app-theatre></mat-card>
+</div></div>
+</body>

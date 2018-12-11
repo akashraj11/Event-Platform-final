@@ -1,0 +1,96 @@
+#topContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.childContainer
+{
+    text-align: center;
+    flex-basis: 50%;     
+}  
+h1{
+    margin-bottom: 0;
+}
+button
+{
+    margin-top: 17px;
+    background-color: #323232;
+    color: white;
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+mat-card
+{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(46,46,46,0.9192051820728291) 0%, rgba(173,172,172,1) 49%, rgba(46,46,46,0.9164040616246498) 100%);
+    color: white;    
+}
+h1{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 400px) {
+    li
+    {
+        margin: 1%;
+        margin-bottom: 2em;
+        flex-basis: 98%;
+    }
+    #container
+{
+    min-height:55vh;
+}
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+    li
+    {
+        margin: 1%;
+        margin-bottom: 2em;
+        flex-basis: 48%;
+    }
+    #container
+{
+    min-height:65vh;
+}
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    li
+    {
+        margin:1%;
+        flex-basis: 31%;
+    }
+    #container
+{
+    min-height:60vh;
+}
+}
+
+@media screen and (min-width: 1281px)  {
+    li
+    {
+        margin: 1%;
+        flex-basis: 23%;
+    }
+    #container
+    {
+        min-height:60vh;
+    }
+    
+}
+

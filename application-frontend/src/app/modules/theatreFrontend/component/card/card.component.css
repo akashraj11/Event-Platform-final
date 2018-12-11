@@ -1,0 +1,58 @@
+.example-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 556px;
+  width: 500px;
+  float: left;
+  margin-left: 6%;
+  margin-right: 33px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.example-header-image {
+  background-color: white;
+  background-image: url('https://www.underconsideration.com/brandnew/archives/bridge_theatre_logo_vertical.png');
+  background-size: cover;
+}
+.mat-card-content>:first-child, .mat-card>:first-child {
+margin-top: 0;
+overflow: hidden;
+height: 3.6em;
+line-height: 1.2em;
+width: 100%;
+}
+.mat-card-actions{
+ width: 100%;
+}
+.button{
+border-radius: 4px;
+background:black;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 10px;
+padding: 5px;
+width: 100px;
+margin-top: 5px;
+position: absolute;
+bottom: 15px;
+}
+.mat-card-actions .mat-button:first-child, .mat-card-actions .mat-raised-button:first-child {
+margin-left: 39%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .example-card {
+    margin-left: 23px;
+    width: 300px;  
+  }
+  .mat-card-actions[_ngcontent-c5] .mat-button[_ngcontent-c5]:first-child, .mat-card-actions[_ngcontent-c5] .mat-raised-button[_ngcontent-c5]:first-child{
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+
+}

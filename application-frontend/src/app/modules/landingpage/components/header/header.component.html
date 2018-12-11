@@ -1,0 +1,125 @@
+<mat-toolbar id="navbar">
+
+  <!-- <div class="selectcity" >
+    <mat-icon>home</mat-icon>
+    <mat-form-field class="matform" >
+      <div class="buttonwrapper" style="padding: 0px;">
+      <mat-select placeholder= {{cityName}}>
+        <mat-option class ="mattext" *ngFor="let show of shows" id ="select-city" (click)="loadMovies(show.cityName)">
+          <a class="text-primary" >
+            {{show.cityName}}</a> 
+        </mat-option>
+      </mat-select>
+    </div>
+    </mat-form-field> 
+</div> -->
+<div class="half"  *ngIf="email != 'Please Login'">
+    <label for="profile2" class="profile-dropdown">
+      <input type="checkbox" id="profile2">
+      <img src="https://cdn0.iconfinder.com/data/icons/avatars-3/512/avatar_hipster_guy-512.png">
+      <label for="profile2" id="hamburger"><i class="fas fa-bars"></i></label>
+      <ul>
+        <li><a [routerLink]="['/rsvpEvent']" routerLinkActive="router-link-active" ><i class="fas fa-envelope"></i>RSVP</a></li>
+        <li><a (click)="goToProfile()" ><i class="fas fa-user"></i>Account</a></li>
+      </ul>
+    </label>
+  </div>
+  
+  <span style="margin:auto;">
+ 
+        <div class="wrap">
+            <div class="search">
+               <input  #searchValue type="text" class="searchTerm" placeholder="What are you looking for?">
+               <button (click)="filter(searchValue.value)"  class="searchButton" >
+                 Search
+              </button>
+            </div>
+         </div>
+ 
+  </span>
+
+
+  
+ 
+
+  
+
+</mat-toolbar>
+ 
+
+
+
+
+ 
+  <section class="main">
+
+      <mat-accordion class ="in">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+            </mat-panel-title>
+            <mat-panel-description>
+              Find Movies Based on Selection
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                      
+                        
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <mat-form-field>
+                            <mat-select placeholder="Sort location"  id="location" name="location" #location="ngModel" [(ngModel)]="cityRecommendation" >
+                              <mat-option *ngFor="let location of locations" [value]="location.value" (click)="loadCityRecommendation(location.value)">
+                                {{location.value}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                        </div>
+                      </li>
+                <li class="nav-item dropdown">
+                 
+                  <mat-form-field>
+                    <mat-select placeholder="Sort Language" id="language" name="Language" #language="ngModel" [(ngModel)]="languageRecommendation"  >
+                      <mat-option *ngFor="let lang of langList" [value] ="lang.value" (click)="loadLanguageRecommendation(language.value)">
+                        {{lang.value}}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  </li>
+                 <li class="nav-item dropdown">
+                 
+                  <mat-form-field>
+                      <mat-select placeholder="Sort Genre" id="Genre" name="Genre" #genre="ngModel" [(ngModel)]="genreRecommendation"  multiple>
+                        <mat-option *ngFor="let genre of gen" [value] ="genre.value" (click)="loadGenreRecommendation(genre.value)">
+                          {{genre.value}}
+                        </mat-option>
+                      </mat-select>
+                    </mat-form-field>
+                   
+                  </li>
+                
+              </ul>
+           </div>
+              
+        </nav>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      
+ </section>
+      
+      
+      
+
+
+
+
+
+      
+      
+      
+        

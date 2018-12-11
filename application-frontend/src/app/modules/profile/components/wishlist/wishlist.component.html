@@ -1,0 +1,30 @@
+
+<div class ="container">
+    <ul class="movie-container">
+
+        <div id="notfound-image">
+            <img  id="centered-image" *ngIf="movies == 0" src="/src/assets/images/not-found.png" alt="Database empty please add theatre" style="width: 100%; margin: auto;" >
+        </div> 
+
+      <li *ngFor="let movie of movies">
+        <div >
+          <mat-card id ="cardblock" (click)="getMovie(movie.movieId,movie.city)">  
+            <img mat-card-image src={{movie.posterUrl}} onerror="this.src='https://www.classicposters.com/images/nopicture.gif'">
+              
+              <div>
+              <mat-icon  class="icon__like--red" (click)="removeFromFavorite(omdbMovie)">clear</mat-icon>
+            </div>
+              <mat-card-subtitle (click)="seeHeroDetails(hero)">{{movie.movieTitle}}({{movie.yearOfRelease}})</mat-card-subtitle>
+          </mat-card> 
+        </div>
+      </li>
+    </ul>
+
+    
+</div>
+
+
+
+
+
+

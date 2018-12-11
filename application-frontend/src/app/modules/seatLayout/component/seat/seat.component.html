@@ -1,0 +1,64 @@
+<div class="container">
+	<main class="innerContainer">
+		<div class="movie">
+			<h3 class="movieTitle">{{movieTitle}}</h3>
+			<div class="movieDetails">Screen No: {{screen}} | Date & Time: {{time}}</div>
+		</div>	
+		
+		<div *ngIf="noOfRows > 0">
+				<p class="gold">{{type}}</p>
+			<div *ngFor="let row of rows">
+				{{row}} 
+				<span class="seat" *ngFor="let col of cols"  let i=index (click)="seatClicked(row + col)" [ngSwitch]="getStatus(row + col)">
+					<div *ngIf >
+						<br>
+							passage Way
+						<br>
+					</div>	 	
+					<span *ngSwitchCase="'selected'" class="glyphicon glyphicon-ok-sign selectedSeat">[_]</span>
+					<span *ngSwitchCase="'reserved'" class="glyphicon glyphicon-ban-circle reservedSeat">[_]</span>
+					<span *ngSwitchDefault class="glyphicon glyphicon-stop freeSeat">[_]</span>
+				</span>	
+			
+			</div>
+
+		</div>
+
+		<div *ngIf="noOfRows > 0">
+				<p class ="silver">{{type2}}</p>
+			<div *ngFor="let row of rows2">
+				{{row}}
+				<span class="seat" *ngFor="let col of cols2"  let i=index (click)="seatClicked2(row + col)" [ngSwitch]="getStatus2(row + col)">
+					
+					<div *ngIf >
+						<br>
+							passage Way
+						<br>
+					</div>	 	
+					<span *ngSwitchCase="'selected'" class="glyphicon glyphicon-ok-sign selectedSeat">[_]</span>
+					<span *ngSwitchCase="'reserved'" class="glyphicon glyphicon-ban-circle reservedSeat">[_]</span>
+					<span *ngSwitchDefault class="glyphicon glyphicon-stop freeSeat">[_]</span>
+				</span>
+			</div>
+		</div>
+		<div class="legend">
+				<span class="glyphicon glyphicon-stop freeSeat">[_]</span> FREE
+				<span class="glyphicon glyphicon-ban-circle reservedSeat padding-left">[_]</span> RESERVED
+				<span class="glyphicon glyphicon-ok-sign selectedSeat padding-left">[_]</span> SELECTED
+			</div>
+			<p class="font14 marginTop5">SCREEN THIS WAY</p>
+			<div class="screen"></div>
+			 
+		
+		<!-- <div class="buttonBar marginTop5"fxLayout fxLayout="row" fxLayoutAlign="space-around center" >
+			<button class="clearbtn" (click)="clearSelected()" [disabled]="selected.length === 0 "  [disabled]="selected2.length === 0" class="btn btn-default btn-sm">Clear</button>
+			<button class="buybtn" (click)="showSelected()" [disabled]="selected.length === 0"  [disabled]="selected2.length === 0" class="btn btn-success btn-sm"routerLink="/checkout">Buy
+				Tickets</button>
+		</div> -->
+		<div class="buttonBar marginTop5"fxLayout fxLayout="row" fxLayoutAlign="space-around center" *ngIf="selected.length + selected2.length > 0">
+			<button  (click)="clearSelected()"  class="btn btn-default btn-sm" class="clearbtn">Clear</button>
+			<button  (click)="showSelected()"  class="btn btn-success btn-sm" class="buybtn">Book</button>
+		</div>
+
+	</main>
+</div>

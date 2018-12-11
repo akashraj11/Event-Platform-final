@@ -1,0 +1,8 @@
+ <div class="containercard" >
+  <mat-card *ngIf="timings?.length!=0"> <div class="details">
+    <p>{{theatreName}} - {{theatreCity}}</p>
+  </div>
+  <div class="shows" *ngFor="let timing of timings">
+    <app-theatre-shows [showDetails]="timing" ></app-theatre-shows>
+  </div></mat-card>
+</div>

@@ -1,0 +1,65 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div *ngIf="omdbMovie">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 col-xs-12">
+        <div class="img-container">
+          <img *ngIf="omdbMovie.posterUrl != 'N/A'" 
+               src={{omdbMovie.posterUrl}} class="img-big center-block">
+          <img *ngIf="omdbMovie.posterUrl === 'N/A'"
+               src="data:image/jpeg;base64,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" class="img-big center-block">
+          <div class="overlay">
+              <div class="btn-favorite" [ngClass]="{'btn-favorite': favorite, 'btn-not-favorite': !favorite}" (click)="addToFavorite(omdbMovie)">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-md-6 col-xs-12">
+
+        <h1>{{omdbMovie.movieTitle}}</h1>
+        <h4 *ngIf="omdbMovie.genre" class="title-genre1">{{omdbMovie.genre}}</h4>
+
+
+
+        <p>
+          <i class="fa fa-calendar-o icon-label" aria-hidden="true"></i> {{omdbMovie.yearOfRelease}}   <i class="fa fa-clock-o icon-label" aria-hidden="true"></i> 2:45 mins
+        </p>
+
+        <div class="rating">
+          <span *ngIf="omdbMovie.averageRating != 'N/A'" class="rating-big">{{omdbMovie.averageRating}}</span><span class="rating-small">/10</span>
+        </div>
+
+
+        <div class="div-details">
+          <h4 class="title-details">PRODUCTION</h4>
+          <p *ngIf="omdbMovie.language != 'N/A'"><span class="label-details">Language: </span>{{omdbMovie.language}}</p>
+          <p *ngIf="omdbMovie.yearOfRelease != 'N/A'"><span class="label-details">Released: </span>{{omdbMovie.yearOfRelease}}</p>
+          <p *ngIf="omdbMovie.director != 'N/A'"><span class="label-details">Director: </span>{{omdbMovie.director}}</p>
+          <p *ngIf="omdbMovie.cast != 'N/A'"><span class="label-details">Stars: </span>{{omdbMovie.cast}}</p>
+        </div>
+
+        <div class="div-story" >
+          <div class="overlay">
+                <div class="btn-favorite" class="showtimes btn _cuatro"  (click)="getTheatres()" >
+                    <i class="fa fa-lock" aria-hidden="true">Book-tickets</i>
+                </div> 
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+</div>  
+
+</body>

@@ -1,0 +1,52 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round|Indie+Flower|Merriweather|Pacifico|Permanent+Marker" 
+    rel="stylesheet">
+</head>
+<body>
+  <div *ngIf="event.eventName==''" id="noData"><h3>Event Not Found</h3></div>
+  <div id="container" *ngIf="event.eventName!=''">
+  <div id="imageContainer" class="childContainer">
+    <img src={{event.eventPosterUrl}} onerror="this.src='https://www.classicposters.com/images/nopicture.gif'">
+  </div>
+  <div id="detailsContainer" class="childContainer">
+    <h1>{{event.eventName}}</h1>
+    <h3>{{event.scheduledDate}}</h3>
+    <h3>{{event.eventVenue}}</h3>
+    <p>{{event.eventDescription}}</p>
+
+    <h3>Invitations</h3>
+    <ul class="emails">
+      <li *ngFor="let email of event.invitations">
+        {{email+" "}}
+      </li>
+    </ul>
+
+    <h3>Attending</h3>
+
+    <ul class="emails">
+      <li *ngFor="let email of event.attending">
+        {{email+"  "}}
+      </li>
+    </ul>
+
+    <h3> May Be Attending</h3>
+
+    <ul class="emails">
+      <li *ngFor="let email of event.maybeAttending">
+        {{email+"  "}}
+      </li>
+      </ul>
+
+      <h3>Not Attending</h3>
+
+     <ul class="emails">
+        <li *ngFor="let email of event.notAttending">
+          {{email+"  "}}
+        </li>
+     </ul>
+   
+     <button mat-raised-button (click)="deleteEvent()" >Delete Event</button>
+
+  </div>
+  </div>
+  </body>

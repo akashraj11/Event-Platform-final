@@ -1,0 +1,5 @@
+html, body { height: 100%; background: whitesmoke}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: whitesmoke }
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit{
+    background-color: #bd9134; 
+}

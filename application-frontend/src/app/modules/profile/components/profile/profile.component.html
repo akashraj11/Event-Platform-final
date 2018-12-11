@@ -1,0 +1,42 @@
+<body>
+<mat-tab-group>
+  <mat-tab label="Profile"> 
+    <div *ngIf="profile">
+      <app-show-profile [profile]="profile"></app-show-profile>
+    </div>
+  </mat-tab>
+  <mat-tab label="Update Profile">
+    <div *ngIf="profile">
+      <app-update-profile [profile]="profile"></app-update-profile>
+    </div>
+  </mat-tab>
+  <mat-tab label="Wishlist">
+      <div *ngIf="profile">
+        <app-wishlist [profile]="profile"></app-wishlist>
+      </div>
+    </mat-tab>
+
+ 
+</mat-tab-group>
+</body> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

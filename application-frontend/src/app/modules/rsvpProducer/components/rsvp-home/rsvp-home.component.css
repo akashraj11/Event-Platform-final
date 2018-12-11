@@ -1,0 +1,109 @@
+#container
+{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background: linear-gradient(90deg, rgba(245,240,240,1) 0%, rgba(140,140,145,1) 35%, rgba(0,6,8,0.9682247899159664) 100%); */
+}
+ .mat-select::Placeholder
+{
+ color:white;
+ font-size: 2px;
+} 
+#bg
+{
+    background-image: url(/assets/images/seminar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+ 
+mat-form-field
+{
+  border-radius: 6px;
+}
+
+
+
+
+@media screen and (max-width: 702px)
+{
+#container
+{
+    width: 100%;
+}
+.childContainer
+{
+   flex-basis: 80%;
+   margin: auto;
+}
+#buttonContainer
+{
+    float: right;
+ 
+}
+
+button
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+mat-form-field
+{
+    margin-top: 10px;
+    width: 100%;
+}
+#routerContainer
+{
+    min-height: 30em;
+}
+}
+@media screen and (min-width: 703px)
+{
+.childContainer
+{
+   flex-basis: 49%;
+}
+#buttonContainer
+{
+    float: right;
+}
+button
+{
+  margin-top: 20px;
+    float:right;
+}
+mat-form-field
+{
+    margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  
+}
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+
+    #routerContainer
+    {
+        min-height: 32em;
+    }
+   
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+    #routerContainer
+    {
+        min-height: 35em;
+    }
+}
+
+@media screen and (min-width: 1281px)  {
+    #routerContainer
+    {
+        min-height: 35em;
+    }
+}

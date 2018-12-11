@@ -1,0 +1,81 @@
+<body>
+<div class="profile-container" style="    margin-bottom: 50px;">
+  <form class="profile-container" [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input type="text" matInput placeholder="Name" class="form-control" id="name" formControlName="name" required>
+        <mat-error *ngIf="name.invalid && (name.dirty || name.touched)">
+            Name shouldn't be empty
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+          <mat-label>City</mat-label>
+          <input type="text" matInput placeholder="City" class="form-control" id="city" formControlName="city" required>
+          <mat-error *ngIf="city.invalid && (city.dirty || city.touched)">
+              City shouldn't be empty
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Contact Number</mat-label>
+            <input type="text" matInput placeholder="Contact Number" class="form-control" id="phoneNumber" formControlName="phoneNumber" required>
+            <mat-hint>Contact Number should be of 10 digits</mat-hint>
+            <mat-error *ngIf="phoneNumber.errors && (phoneNumber.dirty || phoneNumber.touched)">
+                <mat-error *ngIf="phoneNumber.errors.required">
+                  Contact Number shouldn't be empty
+                </mat-error>
+                <mat-error *ngIf="phoneNumber.invalid">
+                  Contact Number is invalid
+                </mat-error>
+              </mat-error>
+          </mat-form-field> 
+
+
+          <mat-accordion>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Genre
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Select the genre
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <div class="Genre" >
+                    <h4>Genre</h4>
+                    <label formArrayName="genre" *ngFor="let order of updateForm.controls.genre.controls; let i = index">
+                        <input type="checkbox" [formControlName]="i"  class="form-control" id="order"  >
+                        {{genreList[i]}}
+                    </label>
+                 </div>
+              </mat-expansion-panel>
+            </mat-accordion>     
+            <br/><br/>
+            <mat-accordion>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Language
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Select the languages
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <div class="Language" >
+                      <h4>Language</h4>
+                      <label formArrayName="language" *ngFor="let order of updateForm.controls.language.controls; let i = index">
+                          <input type="checkbox" [formControlName]="i" class="form-control" id="order"  >
+                          {{languageList[i]}}
+                      </label>
+                   </div>
+                </mat-expansion-panel>
+              </mat-accordion> 
+              <br/><br/>
+
+    <button mat-raised-button type="submit" [disabled]="!updateForm.valid">Update</button>
+ 
+  </form>
+</div>
+</body>
+ 
+
+ 

@@ -1,0 +1,66 @@
+<div class="signup">
+	<mat-card>
+		<mat-card-title class="textPos">
+			THEATRE DETAILS 
+		</mat-card-title>
+		<mat-card-content>
+			<form [formGroup]="theatreRegForm" class="form" novalidate>
+
+
+				<mat-form-field>
+					<input name="theatreName" matInput formControlName="theatreName" placeholder="Theatre name" type="text"  [(ngModel)]="theatre.theatreName" >
+					<mat-error align="start" *ngIf="theatreRegForm.get('theatreName').hasError('required') || theatreRegForm.get('theatreName').hasError('minlength')" class="form__error">*Mandatory Field </mat-error>
+				</mat-form-field>
+
+                <mat-form-field>
+                    <mat-select formControlName="theatreCity" [(ngModel)]="theatre.theatreCity"  placeholder="Location" required>
+                    <mat-option *ngFor="let location of locations" [value]="location.value" > {{location.value}} </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+				<mat-form-field>
+            <input name="theatreAddress" matInput formControlName="theatreAddress" placeholder="Theatre Address" type="text" [(ngModel)]="theatre.theatreAddress" > 
+            <mat-error align="start" *ngIf="theatreRegForm.get('theatreAddress').hasError('required') || theatreRegForm.get('theatreAddress').hasError('minlength')"  class="form__error">*Mandatory Field</mat-error>
+        </mat-form-field>
+
+        <h3 class="textPos">Seat Layout For Arena</h3>
+        <div class="classseat">
+                <h4 class="textPos">Gold Class</h4>
+        <div class="goldcl">
+        
+
+        <mat-form-field class="matborder">
+            <input name="noOfColumns1" matInput formControlName="noOfColumns1" placeholder="No of Columns" type="number"  [(ngModel)]="noOfColumns1" >
+            <mat-error align="start" *ngIf="theatreRegForm.get('noOfColumns1').hasError('required') || theatreRegForm.get('noOfColumns1').hasError('min') || theatreRegForm.get('noOfColumns1').hasError('max')" class="form__error">*Value Should be between 1 & 8</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="matborder">
+            <input name="noOfRows1" matInput formControlName="noOfRows1" placeholder="No of Rows" type="number"  [(ngModel)]="noOfRows1" >
+            <mat-error align="start" *ngIf="theatreRegForm.get('noOfRows1').hasError('required') || theatreRegForm.get('noOfRows1').hasError('min') || theatreRegForm.get('noOfRows1').hasError('max')" class="form__error">*Value Should be between 1 & 8</mat-error>
+        </mat-form-field>
+
+        </div>
+
+        <h4 class="textPos">Silver Class</h4>
+        <div class="silvercl">
+
+        <mat-form-field class="matborder">
+            <input name="noOfColumns2" matInput formControlName="noOfColumns2" placeholder="No of Columns" type="number"  [(ngModel)]="noOfColumns2" >
+            <mat-error align="start" *ngIf="theatreRegForm.get('noOfColumns2').hasError('required') || theatreRegForm.get('noOfColumns2').hasError('min') || theatreRegForm.get('noOfColumns2').hasError('max')" class="form__error">*Value Should be between 1 & 8</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="matborder">
+            <input name="noOfRows2" matInput formControlName="noOfRows2" placeholder="No of Rows" type="number" [(ngModel)]="noOfRows2" >
+            <mat-error align="start" *ngIf="theatreRegForm.get('noOfRows2').hasError('required') || theatreRegForm.get('noOfColumns2').hasError('min') || theatreRegForm.get('noOfRows1').hasError('max')" class="form__error">*Value Should be between 1 & 8</mat-error>
+        </mat-form-field>
+        </div>
+        </div>  
+            
+        </form>
+        </mat-card-content>
+        
+		<mat-card-actions class ="action">
+			<button mat-button (click)="submit()">Submit</button>
+		</mat-card-actions>
+	</mat-card>
+</div>

@@ -1,0 +1,21 @@
+
+app-alerts{
+    z-index: 1000;
+}
+.routerclass{
+    height: 100%;
+    background:whitesmoke;
+    background-size: cover;
+    background-position: bottom;
+}
+.marginGive{
+    margin-top: 5.3em;
+    height: 369px;
+}
+
+@media screen and (max-width: 360px) {
+  
+    .marginGive{
+        margin-top: 7.3em;
+    }
+}

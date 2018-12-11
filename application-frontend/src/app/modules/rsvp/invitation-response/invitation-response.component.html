@@ -1,0 +1,40 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round|Indie+Flower|Merriweather|Pacifico|Permanent+Marker" 
+    rel="stylesheet">
+</head>
+<div id="container">
+<form class="form">
+  <mat-form-field class="example-full-width">
+    <input matInput #email name="email" placeholder="Your E-mail">
+  </mat-form-field>
+  <div class="inputbox">
+    <button mat-button class="button" (click)="onSubmit(email.value)">Submit</button>
+  </div>
+</form>
+
+<div id="res"  [hidden]="hidden">
+<div class="response-form">
+  <div id="imageContainer" class="childContainer">
+        <img src={{event.eventPosterUrl}} onerror="this.src='https://www.classicposters.com/images/nopicture.gif'">
+ </div>
+ <div id="detailsContainer" class="childContainer">
+  <h2>Hello {{userEmail}}</h2>
+  <h3>You have been invited to attend {{event.eventName}} by {{producerEmail}}</h3>
+  <h4>Please choose an option</h4>
+ 
+  <mat-radio-group class="response-group" [(ngModel)]="response">
+    <mat-radio-button class="response-buttons" *ngFor="let option of options" [value]="option">
+      {{option}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div class="selected-value"> You selected: {{response}} </div>
+  <div class="button-container">
+    <mat-card-actions>
+      <button class="button" mat-button (click)="responseFn()" disabled={{disable}}><span>Submit response</span></button>
+    </mat-card-actions>
+  </div>
+</div>
+</div>
+</div>
+
+</div>

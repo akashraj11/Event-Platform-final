@@ -1,0 +1,387 @@
+#navbar {
+  width: 100%;
+  display: flex;
+}
+.matform {
+  width: 0px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+}
+
+mat-expansion-panel{
+  background: whitesmoke;
+}
+
+.search {
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #000000;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.text-primary {
+  font-size: 15px;
+}
+.searchTerm:focus{
+  color: #000;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 80px;
+  height: 36px;
+  border: 1px solid #000;
+  background: #000;
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  margin-left: -4%;
+}
+.Login-button{
+  border-radius: 4px;
+  background-color: #8a2be2;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  margin-top: 5px;
+  bottom: 15px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  width: 120px;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: -230%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  width:100%;
+}
+
+.mat-expansion-panel-body {
+  margin:auto;
+}
+
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  list-style-type: none;
+  
+  justify-content: center;
+
+}
+li{
+  text-decoration: none;
+   
+}
+
+@media only screen and (max-width: 600px){
+  .selectcity {
+    font-size: 12px;
+    width: 55px;
+  }
+  .buttonwrapper{
+    width: 65px;
+  }
+  .matform {
+    width: 70px;
+  }
+}  
+@media only screen and (max-width: 600px) {
+  .brand-name {
+    display: none;
+  }
+  .navbar-brand {
+    margin-top: 9px;
+  }
+  .Login-button{
+    font-size: 15px;
+  }
+
+}
+@media only screen and (max-width: 425px) {
+
+  .wrap{
+    width: 20%;
+  }
+  .brand-name {
+    display: none;
+  }
+  .navbar-brand {
+    margin-top: 9px;
+  }
+  .Login-button{
+    font-size: 11px;
+  }
+  .searchButton {
+    width: 55px;
+
+    font-size: 12px;
+    right: -64px;
+  }
+  .searchTerm {
+ 
+    font-size: 10px;
+  }
+  .wrap {
+    right: 135px;
+  }
+  .mat-toolbar {
+    height: 50px;
+  }
+  .selectcity {
+    font-size: 12px;
+    width: 55px;
+  }
+  .buttonwrapper{
+    width: 65px;
+  }
+  .matform {
+    width: 70px;
+  }
+}
+
+ 
+
+
+@media only screen and (max-width: 425px) {
+.search{
+  left: -25px;
+  width: 180px;
+}
+
+.mat-toolbar{
+  padding-left: 0;
+}
+
+input{
+  height: 100;
+}
+
+.mat-expansion-panel-body {
+  padding: 0;
+}
+
+ 
+
+}
+
+
+
+
+.profile-dropdown {
+  display: inline-block;
+  position: relative;
+  background: #f2f2f2;
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+.profile-dropdown * {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+.profile-dropdown input[type="checkbox"] {
+  display: none;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ ul {
+  display: block;
+  animation: pulse 0.5s;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ img {
+  background: #5f5f5f;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ label {
+  background: whitesmoke;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ label i {
+  color: #f2f2f2;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ label:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: calc(50% - 10px);
+  display: block;
+  border-style: solid;
+  border-width: 7px 10px 0 10px;
+  border-color: #5f5f5f transparent transparent transparent;
+  width: 0;
+  height: 0;
+}
+.profile-dropdown img {
+  display: inline-block;
+  background: #d9d9d9;
+  height: 2.5rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin: 0.5rem 0.75rem 0.5rem 0.5rem;
+  border-radius: 50%;
+}
+.profile-dropdown span {
+  display: inline-block;
+  vertical-align: sub;
+  margin-right: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.profile-dropdown ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  border-radius: 3px;
+}
+.profile-dropdown ul li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #737373;
+  font-size: 1rem;
+}
+.profile-dropdown ul li a i {
+  font-size: 1.3rem;
+  vertical-align: middle;
+  margin: 0 0.75rem 0 -0.25rem;
+}
+.profile-dropdown ul li a:hover {
+  background: #e5e5e5;
+}
+.profile-dropdown ul li:first-child a:hover {
+  border-radius: 3px 3px 0 0;
+}
+.profile-dropdown ul li:last-child a:hover {
+  border-radius: 0 0 3px 3px;
+}
+.profile-dropdown > label {
+  position: relative;
+  height: 3.5rem;
+  display: block;
+  text-decoration: none;
+  background: transparent;
+  color: #333;
+  box-sizing: border-box;
+  padding: 0.9rem;
+  float: right;
+  border-radius: 0 3px 3px 0;
+}
+.profile-dropdown > label i {
+  color: #b2b2b2;
+  font-size: 1.75rem;
+}
+.profile-dropdown:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body {
+  background: #2c3e50;
+  font-family: Lato;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, .5);
+  text-transform: uppercase;
+  margin: 2rem 0 0;
+  letter-spacing: 0.5rem;
+}
+.container {
+  width: 80%;
+  margin: 4rem auto 2rem;
+}
+.container .half {
+  z-index: 100;
+  width: 50%;
+  float: left;
+  margin-bottom: 2rem;
+
+}
+ 
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+p.subtitle {
+  color: rgba(0, 0, 0, .5);
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem 0 2rem;
+  letter-spacing: 0.1rem;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.25;
+  z-index: -1;
+  background: url(https://ar1web-com.googlecode.com/svn/Bg/bg63.gif);
+}

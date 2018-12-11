@@ -1,0 +1,50 @@
+[
+    {
+        "cityName": "Banglore",
+        "movies": []
+    },
+    {
+        "cityName": "Hyderabad",
+        "movies": []
+    },
+    {
+        "cityName": "Mumbai",
+        "movies": []
+    },
+    {
+        "cityName": "Goa",
+        "movies": []
+    },
+    {
+        "cityName": "Kochi",
+        "movies": []
+    },
+    {
+        "cityName": "Chennai",
+        "movies": []
+    },
+    {
+        "cityName": "New Delhi",
+        "movies": []
+    },
+    {
+        "cityName": "Pune",
+        "movies": []
+    },
+    {
+        "cityName": "Ahmedabad",
+        "movies": []
+    },
+    {
+        "cityName": "Lucknow",
+        "movies": []
+    },
+    {
+        "cityName": "Noida",
+        "movies": []
+    },
+    {
+        "cityName": "Nashik",
+        "movies": []
+    } 
+]

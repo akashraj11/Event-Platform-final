@@ -1,0 +1,63 @@
+<h3>Enter Event Details</h3>
+
+<form (ngSubmit)="onSubmit()" #rsvpForm="ngForm" id="rsvpForm">
+
+  
+
+
+  <div id="primary">
+
+      <mat-form-field>
+      <input  matInput placeholder="Event Name"  [(ngModel)]="rsvp.eventName" type="text" 
+      class="form-control" id="name" name="name" required #name="ngModel">
+      </mat-form-field>
+      <div [hidden]="name.valid || name.pristine" class="alert">Event Name should not be null </div> 
+      
+      <mat-form-field>
+        <input [(ngModel)]="rsvp.scheduledDate" name="date" type="datetime-local"  matInput placeholder="Date and Time" required >
+    </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput placeholder="Event Details" [(ngModel)]="rsvp.eventDescription" id="details" name="details"></textarea>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input  matInput placeholder="Event Venue"  [(ngModel)]="rsvp.eventVenue" type="text" 
+        class="form-control" id="venue" name="venue" required #venue="ngModel">
+        </mat-form-field>
+        <div [hidden]="venue.valid || venue.pristine" class="alert">Event venue should not be null </div> 
+
+        <mat-form-field>
+          <input  matInput placeholder="Poster URL"  [(ngModel)]="rsvp.eventPosterUrl" type="text" 
+          class="form-control" id="url" name="url" required #url="ngModel">
+        </mat-form-field>
+        
+        <!-- <div id="emailBox">
+        <mat-form-field >
+          <input  matInput placeholder="Emails" [(ngModel)]="userEmail" type="email"
+          class="form-control" id="userEmail" name="userEmail" #email="ngModel">
+          </mat-form-field>
+
+          <button  mat-raised-button id="addButton" type="button" (click)="addEmail()">Add</button>
+        </div>
+        <ul id="emailArray">
+          <li *ngFor="let email of emailArray">{{email+", "}}</li>
+        </ul> -->
+
+        <mat-form-field>
+          <textarea matInput placeholder="Emails separated by ," [(ngModel)]="userEmail" id="userEmail" name="userEmail"></textarea>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input  matInput placeholder="Invitation Message"  [(ngModel)]="msg" type="text" 
+          class="form-control" id="message" name="message" required #message="ngModel">
+          </mat-form-field>
+          <div [hidden]="message.valid || message.pristine" class="alert">Write some invitation message </div> 
+
+  </div>
+
+
+<div id="submitWrapper">
+<button mat-raised-button type="submit" id="sub" class="btn btn-success" [disabled]="!rsvpForm.form.valid">Submit</button>
+</div>
+</form>

@@ -1,0 +1,23 @@
+<mat-toolbar id="navbar">
+  <span>EventBuzz</span>
+  <span>
+    <a class="navbar-brand" href="#">
+     <img src="/src/assets/images/logo.png" width="50" height="50" alt="logo">
+    </a>
+  </span>
+  <span style="margin:auto;">
+    <form>
+        <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="What are you looking for?">
+               <button type="submit" class="searchButton" routerLink="/search">
+                 Search
+              </button>
+            </div>
+         </div>
+   </form>
+  </span>
+  <span>
+      <button class="Login-button" [routerLink]="['/login']" routerLinkActive="router-link-active" >Login/Sign-Up</button>
+  </span>
+</mat-toolbar>

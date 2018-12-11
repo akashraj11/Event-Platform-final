@@ -1,0 +1,132 @@
+#footer
+{
+    background-image: url("/assets/images/footer_lodyas.png");
+    color: rgb(192, 189, 189);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}   
+h1{
+    margin-bottom: 0;
+    font-size: 1em;
+} 
+h5,h4
+{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+    .footer-child
+    {
+        text-align: center;
+       
+        flex-basis: 33%;
+    }    
+
+        ul 
+        {
+            margin-top: 0;
+           padding-left: 0;
+            list-style: none;
+        }    
+            li 
+            {
+               
+                font-size: 1em;
+                padding: .2em;
+            }    
+                a 
+                {
+                    text-decoration: none;
+                    color: rgb(192, 189, 189);
+                 
+                }
+
+@media screen and (max-width: 400px) {
+    .footer-child
+    {
+        flex-basis: 99%;
+      
+    }
+   
+}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+        .footer-child
+        {
+            flex-basis: 99%;
+        } 
+    
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+            ul 
+            {
+                width:11em;
+              margin: auto;
+            } 
+                li 
+                {
+                    font-size: 0.8em;
+                    text-align: left;
+                }
+}
+
+@media screen and (min-width: 1281px) {
+    ul{
+        width:11em;
+        margin: auto;
+      } 
+    li{
+        text-align: left;
+     }
+    
+}
+
+@media only screen and (max-width: 425px) {
+        #contact{
+            visibility: hidden;
+            display: none;
+            clear: both;}
+        #media{
+            visibility: hidden;
+            display: none;
+            clear: both;}
+        h1{
+                font-size:  0.8em;
+        }
+        h4{
+                visibility: hidden;
+                display: none;
+                clear: both;
+        }  
+
+
+        footer {
+            padding: 10px 0;
+            text-align: center;
+            margin: auto;
+          }
+          footer a {
+            padding: 10px;
+            border-right: 1px solid #70726F;
+            transition: all .5s ease;
+          }
+          footer a:first-child {
+            border-left: 1px solid #70726F;
+          }
+          footer a:hover {
+            color: white;
+          }
+}
+
+
+@media only screen and (min-width: 425px) {
+    footer{
+        visibility: hidden;
+        display: none;
+        clear: both;}
+
+}
+

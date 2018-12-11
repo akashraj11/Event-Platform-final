@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    width: 80%;
+    background-color: #f1f0f0;
+    margin: auto;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.shows {
+    margin-left: 15px;
+}
+
+.details {
+    width: 200px;
+}
+
+mat-card{
+    display: flex;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 460px) {
+    mat-card{
+        display: flex;
+        flex-direction: column;
+    }
+}

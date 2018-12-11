@@ -1,0 +1,182 @@
+
+<section class="main">
+
+<section class="main1"  >
+    
+  
+  
+       <section class="in" >    
+         <mat-card  >
+                <mat-card-title><b>Chicken Nuggets</b></mat-card-title>
+              <img mat-card-image src='https://originserver-static1-uat.pvrcinemas.com/newweb/fnb/HO00112053.jpg' alt="Popcorn">
+              <mat-card-content >Price: Rs200 </mat-card-content>
+                  <button mat-button class="Add" (click)="sum('Chicken Nuggets')" *ngIf="count1==0">ADD</button>
+                  <div *ngIf="count1>0">
+                  <button (click)="dif('Chicken Nuggets')" >
+                      -
+                  </button>
+                  {{count1}}
+                  <button  (click)="sum('Chicken Nuggets')" >
+                      +
+                  </button>
+                </div> 
+            </mat-card>
+       </section>
+       <section class="in" >    
+        <mat-card  >
+               <mat-card-title><b>Burger</b></mat-card-title>
+             <img mat-card-image src='https://originserver-static1-uat.pvrcinemas.com/newweb/fnb/HO00105054.jpg' alt="Popcorn">
+             <mat-card-content >Price: Rs250 </mat-card-content>
+                 <button mat-button class="Add" (click)="sum('Burger')" *ngIf="count2==0">ADD</button>
+                 <div *ngIf="count2>0">
+                 <button (click)="dif('Burger')" >
+                    -
+                 </button>
+                 {{count2}}
+                 <button  (click)="sum('Burger')" >
+                    +
+                </button>
+               </div> 
+           </mat-card>
+      </section>
+      <section class="in" >    
+        <mat-card  >
+               <mat-card-title><b>Chicken Popcorn</b></mat-card-title>
+             <img mat-card-image src='https://originserver-static1-uat.pvrcinemas.com/newweb/fnb/HO00105835.jpg' alt="Popcorn">
+             <mat-card-content >Price: Rs200 </mat-card-content>
+                 <button mat-button class="Add" (click)="sum('Chicken Popcorn')" *ngIf="count3==0">ADD</button>
+                 <div *ngIf="count3>0">
+                 <button (click)="dif('Chicken Popcorn')" >
+                    -
+                 </button>
+                 {{count3}}
+                 <button  (click)="sum('Chicken Popcorn')" >
+                    +
+                 </button>
+               </div> 
+           </mat-card>
+      </section>
+      <section class="in" >    
+        <mat-card  >
+               <mat-card-title><b>Popcorn</b></mat-card-title>
+             <img mat-card-image src='https://originserver-static1-uat.pvrcinemas.com/newweb/fnb/HO00112141.jpg' alt="Popcorn">
+             <mat-card-content >Price: Rs200 </mat-card-content>
+                 <button mat-button class="Add" (click)="sum('Popcorn')" *ngIf="count4==0">ADD</button>
+                 <div *ngIf="count4>0">
+                  <button (click)="dif('Popcorn')" >
+                    -
+                  </button>
+                 {{count4}}
+                  <button  (click)="sum('Popcorn')" >
+                    +
+                  </button>
+               </div> 
+           </mat-card>
+      </section>
+
+        <section class="in" >
+          <mat-card >
+                <mat-card-title><b>Pepsi</b></mat-card-title>
+              <img mat-card-image src='https://originserver-static1-uat.pvrcinemas.com/newweb/fnb/HO00107726.jpg' alt="Popcorn">
+              <mat-card-content>Price: Rs200 </mat-card-content>
+                  <button mat-button class="Add" (click)="sum('Pepsi')" *ngIf="count5==0">ADD</button>
+                  <div *ngIf="count5>0">
+                    <button (click)="dif('Pepsi')" >
+                        -
+                    </button>
+                    {{count5}}
+                    <button  (click)="sum('Pepsi')" >
+                        +
+                    </button>
+                  </div>
+            </mat-card>
+        </section>
+          <section class="in" >
+              <mat-card >
+                 
+                    <mat-card-title><b>Masala Fries</b></mat-card-title>
+                
+                  <img mat-card-image src='https://originserver-static1-uat.pvrcinemas.com/newweb/fnb/HO00105836.jpg' alt="Popcorn">
+                  <mat-card-content>Price: Rs200 </mat-card-content>
+                      <button mat-button class="Add" (click)="sum('Masala Fries')" *ngIf="count6==0" >ADD</button>
+                      <div *ngIf="count6>0">
+                        <button (click)="dif('Masala Fries')" >
+                            -
+                        </button>
+                        {{count6}}
+                        <button  (click)="sum('Masala Fries')" >
+                            +
+                        </button>
+                      </div>
+                </mat-card>
+          </section>
+              <section class="in">
+                  <mat-card >
+                        <mat-card-title><b>Combo-Large</b></mat-card-title>
+                      <img mat-card-image src='https://originserver-static1-uat.pvrcinemas.com/newweb/fnb/HO00109612.jpg' alt="Popcorn">
+                      <mat-card-content >Price: Rs250 </mat-card-content>
+                          <button mat-button class="Add" (click)="sum('Combo-Large')" *ngIf="count7==0">ADD</button>
+                          <div *ngIf="count7>0">
+                            <button (click)="dif('Combo-Large')" >
+                                -
+                            </button>
+                            {{count7}}
+                            <button  (click)="sum('Combo-Large')" >
+                                +
+                            </button>
+                          </div>
+                    </mat-card>
+              </section>
+              <section class="in">
+                  <mat-card >
+                        <mat-card-title><b>Chicken Pizza</b></mat-card-title>
+                      <img mat-card-image src='https://originserver-static1-uat.pvrcinemas.com/newweb/fnb/HO00110580.jpg' alt="Popcorn">
+                      <mat-card-content >Price: Rs250 </mat-card-content>
+                          <button mat-button class="Add" (click)="sum('Chicken Pizza')" *ngIf="count8==0">ADD</button>
+                          <div *ngIf="count8>0">
+                            <button (click)="dif('Chicken Pizza')" >
+                                -
+                            </button>
+                            {{count8}}
+                            <button  (click)="sum('Chicken Pizza')" >
+                                +
+                            </button>
+                          </div>
+                    </mat-card>
+              </section>
+</section>
+
+<section class="bill">
+    <div id="emailBox" *ngIf="email == 'Guest' ">
+        <input placeholder="Enter you Email" type="email" #email>
+        <button mat-button  id="sub" (click)="onSubmit(email.value)">Add</button>
+      </div>
+  <mat-card class="example-card1">
+        <mat-card-title class="paytitle"><b>Booking Summary</b></mat-card-title>
+      <mat-card-content class="paycontent"> 
+            <pre class="tab">{{movieTitle}} {{time}}</pre>
+            <pre class="tab">{{classtype}}  Rs {{Ticktamount}}</pre>
+            <pre class="tab">{{selectedseats}}</pre>
+            <pre class="tab">Booking fees: Rs {{bookamount}}</pre> 
+         <pre class="tab"><b>Sub Total :   Rs {{subamount}}</b></pre>
+            <pre class="tab"><b>Food & Bevarage:   </b></pre>
+            <pre class="tab" *ngIf="(count1>0)"> {{fitem1}}(Qt. {{count1}}) :  Rs {{ft1}}</pre>
+            <pre class="tab" *ngIf="(count2>0)"> {{fitem2}}(Qt. {{count2}}) :  Rs {{ft2}}</pre>
+            <pre class="tab" *ngIf="(count3>0)"> {{fitem3}}(Qt. {{count3}}) :  Rs {{ft3}}</pre>
+            <pre class="tab" *ngIf="(count4>0)"> {{fitem4}}(Qt. {{count4}}) :  Rs {{ft4}}</pre>
+            <pre class="tab" *ngIf="(count5>0)"> {{fitem5}}(Qt. {{count5}}) :  Rs {{ft5}}</pre>
+            <pre class="tab" *ngIf="(count6>0)"> {{fitem6}}(Qt. {{count6}}) :  Rs {{ft6}}</pre>
+            <pre class="tab" *ngIf="(count7>0)"> {{fitem7}}(Qt. {{count7}}) :  Rs {{ft7}}</pre>
+            <pre class="tab" *ngIf="(count8>0)"> {{fitem8}}(Qt. {{count8}}) :  Rs {{ft8}}</pre>
+            <hr>
+        <h4><b><pre class="tab">Amount Payable:    Rs {{payamount}}</pre></b></h4>
+        <mat-card-actions align="end">
+          <div *ngIf="email != 'Guest'">
+          <button mat-button class="Proceed" (click)="makePayment()" ><b>Proceed</b></button></div>
+        </mat-card-actions>
+      </mat-card-content>
+      
+    </mat-card>
+   
+</section>
+</section>

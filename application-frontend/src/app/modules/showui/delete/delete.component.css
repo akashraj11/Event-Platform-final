@@ -1,0 +1,11 @@
+.form1{
+    /* text-align: center; */
+    margin-left: 60px;
+    margin-top:10px;
+}
+
+@media screen and (min-width: 799px) {
+.form1{
+    height: 60vh;
+}
+}

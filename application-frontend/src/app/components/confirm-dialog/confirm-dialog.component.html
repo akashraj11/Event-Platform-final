@@ -1,0 +1,16 @@
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+  crossorigin="anonymous">
+</head>
+
+<div id="box">
+    <i class="fas fa-times" (click)="closeDialog()"></i>
+  <div id="detailContainer">
+    <div>{{data.message}}</div>
+  </div>
+  <div id="buttonContainer">
+    <button mat-flat-button id="no-button" [mat-dialog-close]="false">NO</button>
+    <button mat-flat-button id="yes-button" [mat-dialog-close]="true">YES</button>
+  </div>
+</div>

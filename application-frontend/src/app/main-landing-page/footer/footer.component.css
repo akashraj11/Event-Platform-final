@@ -1,0 +1,14 @@
+footer {
+    /* just for demo */
+    background-color: #8a2be2;
+    text-align:center;
+    color: #E7E7E7;
+    margin: auto;
+   /* just for demo */ 
+  
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}

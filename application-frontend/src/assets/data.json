@@ -1,0 +1,1288 @@
+[
+    {
+        "cityName": "Banglore",
+        "movies": [
+         {
+             "movieId": 5,
+             "movieTitle": "Prestige",
+             "yearOfRelease": 2006,
+             "posterUrl": "https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_SX300.jpg",
+             "ratingArray": [],
+             "averageRating": 8,
+             "language": "English",
+             "certificate": "U/A",
+             "genre": ["mystery","thriller"],
+             "theatres": [
+                 {
+                     "theatreId": 376,
+                     "theatreName": "PVR IMAX",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Tavarekere",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "3:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "356",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "65",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 39,
+                     "theatreName": "PVR",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "BTM",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "3546",
+                             "showTime": "11:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 3789,
+                     "theatreName": "Inox",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Koramangala",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "9:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "45",
+                             "showTime": "12:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 9,
+                     "theatreName": "Cinepolis",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Marathahalli",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "1:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 95,
+                     "theatreName": "Huma",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "E-city",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "10:45 AM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "2343",
+                             "showTime": "12:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "35675",
+                             "showTime": "4:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "65456",
+                             "showTime": "8:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 957,
+                     "theatreName": "R-City",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "E-city",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "2:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "354",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "653",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 9578,
+                     "theatreName": "Pheonix",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "BTM",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "6521",
+                             "showTime": "9:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 }
+             ]
+         },
+         {
+             "movieId": 6,
+             "movieTitle": "Batman DarkKnight",
+             "yearOfRelease": 2010,
+             "posterUrl": "https://m.media-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg",
+             "ratingArray": [],
+             "averageRating": 8,
+             "language": "English",
+             "certificate": "U",
+             "genre": ["mystery","Crime"],
+             "theatres": [
+                 {
+                     "theatreId": 376,
+                     "theatreName": "PVR IMAX",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Tavarekere",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "3:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "356",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "65",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 39,
+                     "theatreName": "PVR",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "BTM",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "3546",
+                             "showTime": "11:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 3789,
+                     "theatreName": "Inox",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Koramangala",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "9:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "45",
+                             "showTime": "12:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 9,
+                     "theatreName": "Cinepolis",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Marathahalli",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "1:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 95,
+                     "theatreName": "Huma",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "E-city",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "10:45 AM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "2343",
+                             "showTime": "12:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "35675",
+                             "showTime": "4:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "65456",
+                             "showTime": "8:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 957,
+                     "theatreName": "R-City",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "E-city",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "2:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "354",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "653",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 9578,
+                     "theatreName": "Pheonix",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "BTM",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "6521",
+                             "showTime": "9:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 }
+             ]
+         },
+         {
+             "movieId": 7,
+             "movieTitle": "Thor",
+             "yearOfRelease": 2008,
+             "posterUrl":  "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg",
+             "ratingArray": [],
+             "averageRating": 8,
+             "language": "English",
+             "certificate": "PG-13",
+             "genre": ["Drama","Sci-Fi"],
+             "theatres": [
+                 {
+                     "theatreId": 376,
+                     "theatreName": "PVR IMAX",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Tavarekere",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "3:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "356",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "65",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 39,
+                     "theatreName": "PVR",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "BTM",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "3546",
+                             "showTime": "11:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 3789,
+                     "theatreName": "Inox",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Koramangala",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "9:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "45",
+                             "showTime": "12:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 9,
+                     "theatreName": "Cinepolis",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Marathahalli",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "1:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 95,
+                     "theatreName": "Huma",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "E-city",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "10:45 AM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "2343",
+                             "showTime": "12:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "35675",
+                             "showTime": "4:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "65456",
+                             "showTime": "8:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 957,
+                     "theatreName": "R-City",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "E-city",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "2:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "354",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "653",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 9578,
+                     "theatreName": "Pheonix",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "BTM",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "6521",
+                             "showTime": "9:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 }
+             ]
+         },
+         {
+             "movieId": 10,
+             "movieTitle": "Venom",
+             "yearOfRelease": 2018,
+             "posterUrl": "https://m.media-amazon.com/images/M/MV5BNzAwNzUzNjY4MV5BMl5BanBnXkFtZTgwMTQ5MzM0NjM@._V1_SX300.jpg",
+             "ratingArray": [],
+             "averageRating": 8,
+             "language": "English",
+             "certificate": "U/A",
+             "genre": ["mystery","thriller"],
+             "theatres": [
+                 {
+                     "theatreId": 376,
+                     "theatreName": "PVR IMAX",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Tavarekere",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "3:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "356",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "65",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 39,
+                     "theatreName": "PVR",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "BTM",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "3546",
+                             "showTime": "11:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 3789,
+                     "theatreName": "Inox",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Koramangala",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "9:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "45",
+                             "showTime": "12:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 9,
+                     "theatreName": "Cinepolis",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "Marathahalli",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "1:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 95,
+                     "theatreName": "Huma",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "E-city",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "10:45 AM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "2343",
+                             "showTime": "12:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "35675",
+                             "showTime": "4:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "65456",
+                             "showTime": "8:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 957,
+                     "theatreName": "R-City",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "E-city",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "2:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "354",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "653",
+                             "showTime": "10:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     "theatreId": 9578,
+                     "theatreName": "Pheonix",
+                     "theatreCity": "Bangalore",
+                     "theatreAddress": "BTM",
+                     "timings": [
+                         {
+                             "showId": "1123",
+                             "showTime": "6:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         },
+                         {
+                             "showId": "6521",
+                             "showTime": "9:45 PM",
+                             "categories": [
+                                 {
+                                     "type": "Gold",
+                                     "price": 700
+                                 },
+                                 {
+                                     "type": "Silver",
+                                     "price": 500
+                                 }
+                             ]
+                         }
+                     ]
+                 }
+             ]
+         }]},
+    {
+        "cityName": "Hyderabad",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "Mumbai",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "Goa",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "Kochi",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "Chennai",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "New Delhi",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "Gurugram",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "Ahmedabad",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "Lucknow",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "Noida",
+        "movies": [
+        ]
+    },
+    {
+        "cityName": "Nashik",
+        "movies": [
+        ]
+    } 
+]

@@ -1,0 +1,113 @@
+.example-card {
+    flex-wrap: wrap;
+  }
+
+  
+  .genreinline{
+      display: inline;
+  }
+  .inside {
+      padding: 30px;
+    width: 200px;
+      height: 100px;
+      
+      
+      line-height: 100px;
+      
+      font-weight:bolder;
+      font-size: 2em;
+      text-align: center;
+      margin-left:40px;
+      
+  }
+
+  .laststep ng-star-inserted{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .dateOfBirth {
+      margin-left: 20px;
+      
+  }
+  .genderradio {
+      margin-top: 7px;
+      margin-left: 20px;
+      
+  }
+  .mat-button{
+      background-color: #d6d6d6;
+  }
+  .phone {
+      margin-left: 16px;
+      width: 204px;
+  }
+
+  .form1 {
+      text-align: center;
+      align-self: center;
+  } 
+  h1{
+     text-align: center;
+  }
+  mat-card:hover{
+      color: darkgray;
+  }
+  button{
+      text-align: center;
+  }
+  .inputbox{
+      width: 25%;   
+  }
+
+  .step2form{
+      display: flex; 
+      margin-top: 15px;
+  }
+  .ultimatestep2{
+      margin: auto;
+  }
+
+  mat-radio-button{
+      margin: 5px 16px;
+      margin-right: 70px; 
+  }
+  mat-select{
+      margin: 5px 16px;   
+  }
+   label{
+      margin: auto;   
+  } 
+   .inside img{
+       width: 100%;
+       height: 100%;
+   } 
+
+   li {
+       text-decoration: none;
+       display: inline;
+       margin: 1px;
+       }
+
+  .step3form label{
+      margin: 5px 5px;
+  }
+
+  .mat-stepper-horizontal, .mat-stepper-vertical {
+    display: block;
+    background-color: whitesmoke;
+}
+.mat-horizontal-content-container{
+    background: whitesmoke;
+    padding-bottom: 91px;
+}
+
+.laststep{
+    display: flex;
+    flex-direction: column;
+}
+
+.details-container{
+    display: flex;
+    flex-direction: row;
+}

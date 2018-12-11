@@ -1,0 +1,16 @@
+
+<mat-card id ="cardblock" >
+
+    <img (click)="getMovie(movie.movieId)" mat-card-image src={{movie.posterUrl}} onerror="this.src='https://www.classicposters.com/images/nopicture.gif'">
+    <mat-card-header>
+    <mat-card-title>
+        {{movie.movieTitle}}
+         </mat-card-title> 
+         <mat-card-subtitle>
+            {{movie.yearOfRelease}}
+          </mat-card-subtitle>
+    </mat-card-header>
+          <mat-card-actions>
+            <button mat-raised-button (click)="deleteMovie()">Delete</button>
+        </mat-card-actions>
+  </mat-card>

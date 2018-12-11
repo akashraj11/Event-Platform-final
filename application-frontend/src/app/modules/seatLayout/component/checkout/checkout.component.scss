@@ -1,0 +1,168 @@
+.example-card1 {
+    
+    background-color: rgba(128, 128, 128, 0.705);
+    margin-top:1.5em;
+ 
+  }
+  .mat-button{
+    background-color: rgb(37, 37, 37)
+  }
+
+  #sub 
+  {
+    color: white;
+    font-size: 15;
+    margin-left: 3px;
+  }
+  
+  .mat-card-content, .mat-card-subtitle {
+    display: block;
+    margin: 0px;
+    padding: 0px; 
+}
+.mat-card-subtitle[_ngcontent-c1]{
+  display: block;
+  margin-bottom: 0px;
+  background-color: rgb(197, 226, 218);
+}
+
+.mat-card-title  .in>{
+    color: darkred;
+   
+  }
+  .paycontent{
+    padding: 10px;
+  }
+  .paytitle{
+    padding: 10px;
+  }
+.title1{
+text-align: center;
+color: darkred;
+}
+.Proceed{
+  color: white;
+  font-size: 15;
+}
+.Add{
+  color:white;
+}
+
+
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main1{
+
+  flex-basis: 65%;
+  display: flex;
+  flex-wrap:wrap;
+}
+.in{
+  width: 23.5%;
+    text-align: center;
+    margin-left:1%;
+    
+ }
+.bill {
+   flex-basis: 35%;
+}
+
+
+.in{
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  mat-card 
+  {
+    background: linear-gradient(90deg, rgb(80, 78, 78) 0%, rgba(239,239,247,1) 45%, rgb(80, 78, 78) 100%);
+    .mat-card-title 
+    {
+      height: 3em;
+    }
+    .mat-card-image
+    {
+      height: 15em;
+    }
+  }
+}
+
+#emailBox
+{
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5em;
+  height:100px;
+  background-color: rgba(128, 128, 128, 0.705);
+
+  input 
+  {
+    margin-top: 33px;    
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .main1{
+
+    flex-basis: 100%;
+  }
+  .in{
+    width: 98%;
+      margin-left:1%;
+      
+   }
+  .bill {
+
+     flex-basis: 100%;
+  }
+
+}
+
+
+
+@media screen and (min-width: 401px) and (max-width: 720px) {
+
+  .main1{
+
+    flex-basis: 100%;
+  }
+  .in{
+ 
+    width: 48%;
+      margin-left:1%;
+      
+   }
+  .bill {
+
+     flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {
+
+  .main1{
+
+    flex-basis: 50%;
+  }
+  .in{
+ 
+    width: 48%;
+      margin-left:1%;
+      
+   }
+  .bill {
+
+     flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 1281px)  {
+
+}

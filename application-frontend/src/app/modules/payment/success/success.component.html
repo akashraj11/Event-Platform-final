@@ -1,0 +1,24 @@
+
+  <mat-card>
+  
+  <div class="modalbox success col-sm-8 col-md-6 col-lg-5 center animate" style=" margin-top: 50px;">
+			<div class="icon">
+				<span class="glyphicon glyphicon-ok"></span>
+			</div>
+			<!--/.icon-->
+			<h1>Success!</h1>
+      <h3>Booking Summary</h3>
+      <ul>
+      <li>{{bookingId}}</li>
+      <li>User   : {{email}}</li>
+      <li>Date   : {{showDate}}</li>
+<!-- <li>Time: {{showTiming}}</li> -->
+      <li>Movie  :{{movieTitle}} </li>
+      <li>Theatre: {{theatreName}}</li>
+      <li>Seat   : {{seatString}}</li>
+      <hr>
+      <pre>Amount Paid : {{totalPrice}}</pre>
+      </ul>
+			<button type="button" class="redo btn" [routerLink]="['/']" routerLinkActive="router-link-active" >Ok</button>
+		</div>
+  </mat-card>
