@@ -1,3 +1,6 @@
-[![build status](https://gitlab.stackroute.in/cgi-2018/event-platform/badges/v1.0.0/build.svg)](https://gitlab.stackroute.in/cgi-2018/event-platform/commits/master)
+This is a Fullstack Jave Spring project which allow users to host and consume events like movie shows, art, sports etc. 
 
-[![coverage](https://gitlab.stackroute.in/cgi-2018/event-platform/badges/v1.0.0/coverage.svg?job=codecoverage)](https://gitlab.stackroute.in/cgi-2018/event-platform/commits/v1.0.0)
+Backend : Spring and Mongo DB for backends stack. 
+Frontend: Angular with Typescript for front end.
+Other Techstack: Redis DB, NoSQL, nginx, Zuul, eureka config server.
+ 
